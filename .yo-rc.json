@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "org.launchcode.liftoff"
+    },
+    "jhipsterVersion": "6.7.1",
+    "applicationType": "monolith",
+    "baseName": "liftoff",
+    "packageName": "org.launchcode.liftoff",
+    "packageFolder": "org/launchcode/liftoff",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MTcwZmY2ZGMwMzE3MzVkZWE3NDE0ZGRhNTIxOGQxNGViMWU5ZTgxMDAwYTYwMTBhODJhYmY2ZmM4NWI3ZTQ3NzJlZWJkZmViMDQ0OGI2ZGQ5NDUzNDQxZTE3ODlmOWQ1MTBmOGQ3MTk2MThjODliMzQ5MzRiNjFkM2Q1MjIzYmI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1582476149605,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
