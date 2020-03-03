@@ -1,4 +1,158 @@
-<div class="row">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Recipes Project</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="text-center">
+    <h1>RECIPES</h1>
+  </div>
+           <!-- <div class="row"> -->
+            <div class="column">
+            <div class="card">
+              <!-- <div class="filters"> -->
+                <hr class="pink">
+                <div class="panel panel-default">
+                <div class="panel-heading">Health Condition</div>
+                <hr class="blue">
+                <div class="panel-body">
+                  <form class="rec-form" style="text-align: left">
+                  <hr>
+                        <ul class="list-group" id="ingredientfilters" style="color:royalblue;">
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="diabetes">Diabetes</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="highbloodpressure">High Blook Pressure</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="celiacdisease">Celiac Disease</label>
+                        </ul>
+                        <button id="filterBtnHealth" type="submit" class="btn btn-outline-primary"style="background-color:violet">Add Health Condition</button>
+                    </form>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-- </div> -->
+           <!-- </div> -->
+
+            <!-- <div class="row"> -->
+              <div class="column">
+              <div class="card">
+              <div class="panel panel-default">
+                <hr class="pink">
+                <div class="panel-heading">Ingredient Search</div>
+                <hr class="blue">
+                <div class="panel-body">
+                  <form class="rec-form" style="text-align: left">
+                  <hr>
+                        <ul class="list-group" id="ingredientfilters" style="color: green;">
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="pork">Pork</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="chicken">Chicken</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="beef">Beef</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="cucumbers">Cucumbers</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="cheese">Cheese</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="peppers">Peppers</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="fish">Fish</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="onions">Onions</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="nuts">Nuts</label>
+                            <label class="checkbox-inline"><input type="checkbox" value="" id="vegetables">Vegetables</label>
+                        </ul>
+                        <button id="filterBtnIngredient" type="submit" class="btn btn-outline-primary" style="background-color: greenyellow;">Add Ingredient Choices</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+              </div>
+          <!-- </div> -->
+
+          <!-- <div class="row"> -->
+            <div class="column">
+            <div class="card">
+            <div class="panel panel-default">
+              <hr class="pink">
+              <div class="panel-heading">Dietary Restrictions Search</div>
+              <hr class="blue">
+              <div class="panel-body">
+                <form class="rec-form" style="text-align: left">
+                <hr>
+                      <ul class="list-group" id="dietfilters" style="color: orangered;">
+                          <label class="checkbox-inline"><input type="checkbox" value="" id="pork">No Pork</label>
+                          <label class="checkbox-inline"><input type="checkbox" value="" id="chicken">No Chicken</label>
+                          <label class="checkbox-inline"><input type="checkbox" value="" id="beef">No Beef</label>
+                          <label class="checkbox-inline"><input type="checkbox" value="" id="milk">No Milk</label>
+                          <label class="checkbox-inline"><input type="checkbox" value="" id="cheese">No Cheese</label>
+                          <label class="checkbox-inline"><input type="checkbox" value="" id="butter">No Butter</label>
+                          <label class="checkbox-inline"><input type="checkbox" value="" id="eggs">No Eggs</label>
+                          <label class="checkbox-inline"><input type="checkbox" value="" id="sugar">No Sugar</label>
+                          <label class="checkbox-inline"><input type="checkbox" value="" id="nuts">No Nuts</label>
+                          <label class="checkbox-inline"><input type="checkbox" value="" id="gluten">Gluten Free</label>
+                      </ul>
+                      <button id="filterBtnDiet" type="submit" class="btn btn-outline-primary" style="background-color: lightcoral;">Add Diet Restrictions</button>
+                  </form>
+              </div>
+            </div>
+            </div>
+            </div>
+        <!-- </div> -->
+
+        <!-- <div class="row"> -->
+          <div class="column">
+         <div class="card">
+          <div class="panel panel-default">
+            <hr class="pink">
+            <div class="panel-heading">Cooking Time</div>
+            <hr class="blue">
+            <div class="panel-body">
+              <form class="rec-form" style="text-align: center">
+              <hr>
+                    <ul class="list-group" id="cooktimefilters" style="color: orangered;">
+                        <label class="checkbox-inline"><input type="checkbox" value="" id="15min">15 Minutes</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="" id="30min">30 Minutes</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="" id="45min">45 Minutes</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="" id="60min">60 Minutes</label>
+                        <label for="date"><input type="text" value="" id="mins"><br>Max Prep Time</label>
+
+                    <button id="filterBtnCooktime" type="submit" class="btn btn-outline-primary" style="background-color: lightsalmon;">Add Cooking Preferences</button>
+                  </ul>
+                  </form>
+            </div>
+          </div>
+         </div>
+      </div>
+        <!-- </div> -->
+
+      <!-- <div>
+        <button id="filterResults" type="button" class="btn btn-primary btn-lg"style="position:absolute;width:-50%;bottom:0px;left:150px;background-color:rgb(7, 20, 97);border-color:rgb(7, 20, 97)">Get Results</button>
+      </div> -->
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="row">
     <div class="col-md-3">
         <span class="hipster img-fluid rounded"></span>
     </div>
@@ -40,4 +194,4 @@
             <span>If you like JHipster, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">GitHub</a>!
         </p>
     </div>
-</div>
+</div> -->
